@@ -1,0 +1,12 @@
+washingtonpost.com##.powa-shot-promo-video
+#%#//scriptlet('remove-attr','loop','video')
+#%#//scriptlet('remove-attr','playsinline','video')
+#%#//scriptlet('remove-attr','preload','video')
+!##.video-js
+||live-video.net^
+amazon.com###desktop-editorial
+||player.cnevids.com^
+||anyror.gujarat.gov.in/images/bg_image.png
+||video-api.wsj.com^
+||news.google.com/swg^
+||apis.google.com/js/platform.js^
