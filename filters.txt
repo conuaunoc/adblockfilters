@@ -2,19 +2,6 @@
 !Title: RMXCO uBlock Filters
 !Expires: 1 hours
 
-washingtonpost.com##.powa-shot-promo-video
-#%#//scriptlet('remove-attr','loop','video')
-#%#//scriptlet('remove-attr','playsinline','video')
-#%#//scriptlet('remove-attr','preload','video')
-!##.video-js
-||live-video.net^
-amazon.com###desktop-editorial
-||player.cnevids.com^
-||anyror.gujarat.gov.in/images/bg_image.png
-||video-api.wsj.com^
-||news.google.com/swg^
-||apis.google.com/js/platform.js^
-
 ! Exceptions
 
 @@||*^$font,stylesheet
@@ -29,16 +16,21 @@ amazon.com###desktop-editorial
 @@||google.com^$csp
 @@||feedproxy.google.com^
 
-
 ! domain filters
 
 !||doubleclick.com^$domain=~google.com
+!||ebay.com/gh^
+!||ebay.com/itm^$removeparam=~hash
+!||ebay.com$ping
 !||google-analytics.com/analytics.js$script,redirect=google-analytics.com/analytics.js
 !||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js
 !||googletagmanager.com^$third-party
 !||googletagservices.com^$third-party
 !||googlevideo.com/generate_204^
 !||nytimes.com^$removeparam=/.+/
+!||ocsrest.ebay.com^
+!||rover.ebay.com/roverclk^
+!||src.ebay-us.com^
 ||*.ga^$script
 ||22pixx.xyz^$script
 ||2mdn.net/ads^
@@ -47,8 +39,11 @@ amazon.com###desktop-editorial
 ||amazon-adsystem.com^domain=~amazon.com,important
 ||amazon.com^$ping,removeparam=tag
 ||anyror.gujarat.gov.in/images/bg_image.png^
+||anyror.gujarat.gov.in/images/bg_image.png^
 ||aol.com^$third-party
 ||api.cxense.com^$removeparam=json
+||api.twitter.com/1.1/jot/client_event.json$domain=~twitter.com
+||apis.google.com/js/platform.js^
 ||bing.com^$third-party
 ||bloomberg.com/api/*
 ||brightcove.com^$third-party
@@ -78,6 +73,7 @@ amazon.com###desktop-editorial
 ||licdn.com^$third-party,domain=~linkedin.com
 ||linkedin.com/li/track/*
 ||linkedin.com^$third-party
+||live-video.net^
 ||mailchimp.com^$third-party
 ||mgid.com^$popup
 ||moodiereport.com/flash/*
@@ -85,13 +81,15 @@ amazon.com###desktop-editorial
 ||myfinance.com^$third-party
 ||news.google.com^$third-party
 ||nsimg.net^$~image
-||nytimes.com/ads^
-||nytimes.com/adx^
-||nytimes.com/js/common/screen/altClickToSearch.js^
-||nytimes.com##div>div>div:has-text("Advertisement")
+!||nytimes.com/ads^
+!||nytimes.com/adx^
+!||nytimes.com/js/common/screen/altClickToSearch.js^
+!||nytimes.com/svc/nyt/data-layer^
+!||nytimes.com##div>div>div:has-text("Advertisement")
 ||pinimg.com^$third-party,domain=~pinterest.*
 ||pinterest.com^$third-party
 ||pixsor.com^
+||player.cnevids.com^
 ||rarbg.to/torrents.php^$script
 ||sam.msn.com/promotions^
 ||sdad.guru^$~script,~image,~font,~stylesheet
@@ -107,6 +105,7 @@ amazon.com###desktop-editorial
 ||tree.com^$third-party
 ||turner.com^$third-party
 ||usatoday.com/tangstatic^
+||video-api.wsj.com^
 ||vidtech.cbsinteractive.com/uvpjs/*
 ||washingtonpost.com/pb/api/*
 ||washingtonpost.com/video/*
@@ -127,18 +126,7 @@ amazon.com###desktop-editorial
 ||youtube.com/ptracking^
 ||youtube.com/youtubei/v1/notification/get_unseen_count^
 ||ytimg.com/generate_204^
-!||ebay.com/gh^
-!||ocsrest.ebay.com^
-!||rover.ebay.com/roverclk^
-!||ebay.com/itm^$removeparam=~hash
-!||ebay.com$ping
-!||src.ebay-us.com^
-||api.twitter.com/1.1/jot/client_event.json$domain=~twitter.com
-||nytimes.com/svc/nyt/data-layer^
-
-
 ||bollytalkies.com^$script
-
 ||chaturbate.com^$third-party 
 ||rightbattery.com^$script
 ||thothub.to^$script
@@ -156,6 +144,7 @@ utm$removeparam=/^utm_/
 @@/\:\/\/192\.168\./
 /\:\/\/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\//
 /\:\/\/\d+\//
+washingtonpost.com##.powa-shot-promo-video
 
 
 ! element hiding filters
@@ -163,6 +152,11 @@ utm$removeparam=/^utm_/
 !aliexpress.com##+js(disable-newtab-links.js)
 !aliexpress.com^$removeparam=
 !ebay.com##+js(disable-newtab-links.js)
+#%#//scriptlet('remove-attr','loop','video')
+#%#//scriptlet('remove-attr','playsinline','video')
+#%#//scriptlet('remove-attr','preload','video')
+!##.video-js
+amazon.com###desktop-editorial
 amazon.com##div._video-player_video-card
 americanexpress.com##+js(disable-newtab-links.js)
 architecturaldigest.in###left-social
