@@ -107,6 +107,7 @@
 ||rightbattery.com^$script
 ||thothub.to^$script
 ||torrent9.ninja^$third-party,script
+||iris.tv^
 
 ! pattern filters
 
