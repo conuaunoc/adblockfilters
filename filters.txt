@@ -10,6 +10,13 @@
 @@||google.com/s2/favicons^
 @@||google.com^$csp
 @@||feedproxy.google.com^
+@@||chase.com^
+@@||discover.com^
+@@||rakuten.com^
+@@||zapier.com^
+@@||verizon.com^
+@@||infinity.icicibank.com^
+
 
 ! domain filters
 
