@@ -10,13 +10,6 @@
 @@||google.com/s2/favicons^
 @@||google.com^$csp
 @@||feedproxy.google.com^
-@@||chase.com^
-@@||discover.com^
-@@||rakuten.com^
-@@||zapier.com^
-@@||verizon.com^
-@@||infinity.icicibank.com^
-
 
 ! domain filters
 
@@ -29,10 +22,9 @@
 ||anyror.gujarat.gov.in/images/bg_image.png^
 ||aol.com^$third-party
 ||api.cxense.com^$removeparam=json
-||api.twitter.com/1.1/jot/client_event.json$domain=~twitter.com
 ||apis.google.com/js/platform.js^
 ||bing.com^$third-party
-||bloomberg.com/api/*
+||bloomberg.com/api^$third-party
 ||brightcove.com^$third-party
 ||businessinsider.com^$script
 ||cleanandscentsible.com^$script
@@ -59,7 +51,7 @@
 ||nsimg.net^$~image
 ||pinimg.com^$third-party,domain=~pinterest.*
 ||pinterest.com^$third-party
-||pixsor.com^
+||pixsor.com^$third-party
 ||player.cnevids.com^
 ||rarbg.to/torrents.php^$script
 ||sam.msn.com/promotions^
