@@ -6,25 +6,13 @@
 
 @@||*^$font,stylesheet
 @@||plex.tv^
-@@||scripts.dailymail.co.uk/static/mol-fe/static/mol-fe-sync-bundle/^
-
-! Google filters
-
 @@||google.com/recaptcha^
-@@||googleadservices.com/pagead/aclk^
 @@||google.com/s2/favicons^
 @@||google.com^$csp
 @@||feedproxy.google.com^
 
 ! domain filters
 
-!||doubleclick.com^$domain=~google.com
-!||ebay.com/gh^
-!||ebay.com/itm^$removeparam=~hash
-!||ebay.com$ping
-!||google-analytics.com/analytics.js$script,redirect=google-analytics.com/analytics.js
-!||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js
-!||googlevideo.com/generate_204^
 ||*.ga^$script
 ||22pixx.xyz^$script
 ||2mdn.net/ads^
