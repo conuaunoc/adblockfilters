@@ -4,9 +4,9 @@
 
 ! Exceptions
 
-@@||*^$font,stylesheet
-@@||plex.tv^
-@@||scripts.dailymail.co.uk/static/mol-fe/static/mol-fe-sync-bundle/^
+!@@||*^$font,stylesheet
+!@@||plex.tv^
+!@@||scripts.dailymail.co.uk/static/mol-fe/static/mol-fe-sync-bundle/^
 
 ! Google filters
 
