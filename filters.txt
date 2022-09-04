@@ -1,5 +1,5 @@
 [Adblock Plus 2.0]
-!Title: RMXCO uBlock Filters
+!Title: RMXCO Filters
 !Expires: 1 hours
 
 ! Exceptions
