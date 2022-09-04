@@ -15,13 +15,6 @@
 
 ! domain filters
 
-!||doubleclick.com^$domain=~google.com
-!||ebay.com/gh^
-!||ebay.com/itm^$removeparam=~hash
-!||ebay.com$ping
-!||google-analytics.com/analytics.js$script,redirect=google-analytics.com/analytics.js
-!||google-analytics.com/ga.js$script,redirect=google-analytics.com/ga.js
-!||googlevideo.com/generate_204^
 ||*.ga^$script
 ||22pixx.xyz^$script
 ||2mdn.net/ads^
@@ -31,7 +24,6 @@
 ||anyror.gujarat.gov.in/images/bg_image.png^
 ||aol.com^$third-party
 ||api.cxense.com^$removeparam=json
-||api.twitter.com/1.1/jot/client_event.json$domain=~twitter.com
 ||apis.google.com/js/platform.js^
 ||bing.com^$third-party
 ||brightcove.com^$third-party
@@ -60,7 +52,7 @@
 ||nsimg.net^$~image
 ||pinimg.com^$third-party,domain=~pinterest.*
 ||pinterest.com^$third-party
-||pixsor.com^
+||pixsor.com^$third-party
 ||player.cnevids.com^
 ||rarbg.to/torrents.php^$script
 ||sam.msn.com/promotions^
@@ -103,6 +95,7 @@
 ||rightbattery.com^$script
 ||thothub.to^$script
 ||torrent9.ninja^$third-party,script
+||iris.tv^
 
 ! pattern filters
 
@@ -117,7 +110,6 @@ utm$removeparam=/^utm_/
 /\:\/\/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\//
 /\:\/\/\d+\//
 washingtonpost.com##.powa-shot-promo-video
-
 
 ! element hiding filters
 
@@ -134,15 +126,8 @@ americanexpress.com##+js(disable-newtab-links.js)
 architecturaldigest.in###left-social
 architecturaldigest.in###navBar > .container
 architecturaldigest.in###topadbnr
-!facebook.com##.egoColumnOrganic
-!facebook.com###pagelet_ego_pane
-!facebook.com###pagelet_video_home_watch_list_rhc
-!facebook.com##div[data-pagelet^="FeedUnit"]:has(a:has-text(/^S[a-zA-Z0-9]*p[a-zA-Z0-9]*o[a-zA-Z0-9]*n[a-zA-Z0-9]*s[a-zA-Z0-9]*o[a-zA-Z0-9]*r[a-zA-Z0-9]*e[a-zA-Z0-9]*d/))
-!facebook.com##div[data-pagelet^="FeedUnit"]:has(a:has-text(/^S[a-zA-Z0-9]*p[a-zA-Z0-9]*o[a-zA-Z0-9]*n[a-zA-Z0-9]*s[a-zA-Z0-9]*o[a-zA-Z0-9]*r[a-zA-Z0-9]*e[a-zA-Z0-9]*d/))
 freshfruitportal.com##.banner
 melmagazine.com##+js(disable-newtab-links.js)
-!nytimes.com##div.ad
-!nytimes.com##div[id*="-ad-"]
 pornhub.com##div[onclick^="window.open"]
 pornhub.com##div>div>div>div.adlinks
 quora.com##div.Bundled
@@ -157,17 +142,16 @@ youporn.com##.trafficjunky-float-right
 youporn.com##div[onclick^="window.open"]
 youporn.com##div>a.ad-remove
 reddit.com##div.promotedvideolink
-!twitter.com##article:has-text(/^Promoted/)
 msn.com##.nativead
 msn.com##.native-ad
-icicibank.com##+js(ra.js, /onpaste|oncopy|oncontextmenu/)
+icicibank.com##+js(ra.js,/onpaste|oncopy|oncontextmenu/)
 
 !twitter.com##div>div>div:has-text(/^Promoted/):nth-ancestor(1)
 !twitter.com##:xpath(//article[./div/div/div/div/div/div/div/div/span[contains(text(),"Promoted")]])
 !twitter.com##:xpath(//div[./div/div/div/div/span/span[contains(text(),"Promoted")]])
 !twitter.com##:xpath(//div[./div/div/div/div/span[contains(text(),"Promoted")]])
 
-|ws://127.0.0.1^$domain=ebay.com
+|wss?://127.0.0.1^$domain=ebay.com
 |ws://localhost^$domain=ebay.com
 |wss://127.0.0.1^$domain=ebay.com
 |wss://localhost^$domain=ebay.com
