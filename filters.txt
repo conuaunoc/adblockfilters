@@ -155,9 +155,4 @@ icicibank.com##+js(ra.js,/onpaste|oncopy|oncontextmenu/)
 |ws://localhost^$domain=ebay.com
 |wss://127.0.0.1^$domain=ebay.com
 |wss://localhost^$domain=ebay.com
-@@|ws://127.0.0.1:32400^
-@@|ws://localhost:32400^
-@@!wss://127.0.0.1:32400^
-@@|wss://localhost:32400^
-@@|ws://localhost/lab^
-@@|wss://localhost/lab^
+
