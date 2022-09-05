@@ -106,9 +106,6 @@
 fbclid$removeparam=fbclid
 utm$removeparam=/^utm_/
 *^$popunder
-@@/https?|ftps?|wss?\:\/\/(192\.168|10\.\d{1,3})\.\d{1,3}\.\d{1,3}/
-/\:\/\/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\//
-/\:\/\/\d+\//
 washingtonpost.com##.powa-shot-promo-video
 
 ! element hiding filters
