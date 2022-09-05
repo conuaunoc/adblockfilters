@@ -2,24 +2,13 @@
 !Title: RMXCO Filters
 !Expires: 1 hours
 
-! Exceptions
-
-!@@||*^$font,stylesheet
-!@@||plex.tv^
-!@@||scripts.dailymail.co.uk/static/mol-fe/static/mol-fe-sync-bundle/^
-!@@||google.com/recaptcha^
-!@@||googleadservices.com/pagead/aclk^
-!@@||google.com/s2/favicons^
-!@@||google.com^$csp
-!@@||feedproxy.google.com^
-
 ! domain filters
 
 ||*.ga^$script
 ||22pixx.xyz^$script
 ||2mdn.net/ads^
 ||abcnews.go.com/video/embed^
-||amazon-adsystem.com^domain=~amazon.com,important
+!||amazon-adsystem.com^domain=amazon.com,important
 ||amazon.com^$ping,removeparam=tag
 ||anyror.gujarat.gov.in/images/bg_image.png^
 ||aol.com^$third-party
@@ -79,17 +68,6 @@
 ||wsj.com^$removeparam=mod
 ||yahoo.com^$third-party,domain=~flickr.com
 ||yimg.com^$third-party,domain=~yahoo.com|~flickr.com
-!||youtube.com/*/log_event^
-!||youtube.com/*/scheduler.js^
-!||youtube.com/annotations_invideo?*
-!||youtube.com/api/stats^
-!||youtube.com/generate_204^
-!||youtube.com/get_midroll_*
-!||youtube.com/pagead^
-!||youtube.com/pcs/activeview^
-!||youtube.com/ptracking^
-!||youtube.com/youtubei/v1/notification/get_unseen_count^
-!||ytimg.com/generate_204^
 ||bollytalkies.com^$script
 ||chaturbate.com^$third-party 
 ||rightbattery.com^$script
@@ -100,9 +78,6 @@
 ! pattern filters
 
 ||g00^$~image,~stylesheet,~font
-!.m3u8|$domain=~twimg.com|~pscp.tv|~twitter.com
-!.mp4|$domain=~youtube.com|~vimeo.com|~twitter.com
-!.ts|$domain=~twimg.com|~pscp.tv|~twitter.com
 fbclid$removeparam=fbclid
 utm$removeparam=/^utm_/
 *^$popunder
@@ -142,14 +117,4 @@ reddit.com##div.promotedvideolink
 msn.com##.nativead
 msn.com##.native-ad
 icicibank.com##+js(ra.js,/onpaste|oncopy|oncontextmenu/)
-
-!twitter.com##div>div>div:has-text(/^Promoted/):nth-ancestor(1)
-!twitter.com##:xpath(//article[./div/div/div/div/div/div/div/div/span[contains(text(),"Promoted")]])
-!twitter.com##:xpath(//div[./div/div/div/div/span/span[contains(text(),"Promoted")]])
-!twitter.com##:xpath(//div[./div/div/div/div/span[contains(text(),"Promoted")]])
-
-|wss?://127.0.0.1^$domain=ebay.com
-|ws://localhost^$domain=ebay.com
-|wss://127.0.0.1^$domain=ebay.com
-|wss://localhost^$domain=ebay.com
 
