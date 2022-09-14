@@ -1,15 +1,6 @@
 [Adblock Plus 2.0]
-!Title: RMXCO uBlock Filters
+!Title: RMXCO Filters
 !Expires: 1 hours
-
-! Exceptions
-
-@@||*^$font,stylesheet
-@@||plex.tv^
-@@||google.com/recaptcha^
-@@||google.com/s2/favicons^
-@@||google.com^$csp
-@@||feedproxy.google.com^
 
 ! domain filters
 
@@ -17,12 +8,11 @@
 ||22pixx.xyz^$script
 ||2mdn.net/ads^
 ||abcnews.go.com/video/embed^
-||amazon-adsystem.com^domain=~amazon.com,important
+!||amazon-adsystem.com^domain=amazon.com,important
 ||amazon.com^$ping,removeparam=tag
 ||anyror.gujarat.gov.in/images/bg_image.png^
 ||aol.com^$third-party
 ||bing.com^$third-party
-||bloomberg.com/api^$third-party
 ||brightcove.com^$third-party
 ||businessinsider.com^$script
 ||cleanandscentsible.com^$script
@@ -86,15 +76,9 @@
 ! pattern filters
 
 ||g00^$~image,~stylesheet,~font
-!.m3u8|$domain=~twimg.com|~pscp.tv|~twitter.com
-!.mp4|$domain=~youtube.com|~vimeo.com|~twitter.com
-!.ts|$domain=~twimg.com|~pscp.tv|~twitter.com
 fbclid$removeparam=fbclid
 utm$removeparam=/^utm_/
 *^$popunder
-@@/\:\/\/192\.168\./
-/\:\/\/\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}\//
-/\:\/\/\d+\//
 washingtonpost.com##.powa-shot-promo-video
 
 ! element hiding filters
@@ -132,18 +116,3 @@ msn.com##.nativead
 msn.com##.native-ad
 icicibank.com##+js(ra.js,/onpaste|oncopy|oncontextmenu/)
 
-!twitter.com##div>div>div:has-text(/^Promoted/):nth-ancestor(1)
-!twitter.com##:xpath(//article[./div/div/div/div/div/div/div/div/span[contains(text(),"Promoted")]])
-!twitter.com##:xpath(//div[./div/div/div/div/span/span[contains(text(),"Promoted")]])
-!twitter.com##:xpath(//div[./div/div/div/div/span[contains(text(),"Promoted")]])
-
-|ws://127.0.0.1^$domain=ebay.com
-|ws://localhost^$domain=ebay.com
-|wss://127.0.0.1^$domain=ebay.com
-|wss://localhost^$domain=ebay.com
-@@|ws://127.0.0.1:32400^
-@@|ws://localhost:32400^
-@@!wss://127.0.0.1:32400^
-@@|wss://localhost:32400^
-@@|ws://localhost/lab^
-@@|wss://localhost/lab^
