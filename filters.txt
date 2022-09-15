@@ -4,28 +4,36 @@
 
 ! domain filters
 
+!||amazon-adsystem.com^domain=amazon.com,important
+!||video-api.wsj.com^
+!||wsj.com^$removeparam=mod
+*^$popunder
 ||*.ga^$script
 ||22pixx.xyz^$script
 ||2mdn.net/ads^
 ||abcnews.go.com/video/embed^
-!||amazon-adsystem.com^domain=amazon.com,important
 ||amazon.com^$ping,removeparam=tag
 ||anyror.gujarat.gov.in/images/bg_image.png^
 ||aol.com^$third-party
 ||bing.com^$third-party
+||bollytalkies.com^$script
 ||brightcove.com^$third-party
 ||businessinsider.com^$script
+||chaturbate.com^$third-party 
 ||cleanandscentsible.com^$script
 ||cloudfront.net/player^
 ||cnet.com/a/video-player^
 ||cnetvideo.cbsistatic.com^
+||d275im4r3zngba.cloudfront.net^
 ||dailymail.co.uk/api/player^
 ||dailymail.co.uk^$media,script
 ||facebook.com^$third-party
 ||facebook.net^$third-party,domain=~facebook.com
 ||freebunker.com^$script
+||g00^$~image,~stylesheet,~font
 ||instagram.com/logging^
 ||instagram.com^$removeparam=/^(u|s)$/
+||iris.tv^
 ||lendingtree.com^$third-party
 ||licdn.com^$third-party,domain=~linkedin.com
 ||linkedin.com/li/track/*
@@ -34,6 +42,7 @@
 ||mailchimp.com^$third-party
 ||mgid.com^$popup
 ||moodiereport.com/flash^
+||msn.com/*/node_modules_video_js_*
 ||myfinance.com^$third-party
 ||news.google.com^$third-party
 ||nsimg.net^$~image
@@ -42,6 +51,7 @@
 ||pixsor.com^$third-party
 ||player.cnevids.com^
 ||rarbg.to/torrents.php^$script
+||rightbattery.com^$script
 ||sam.msn.com/promotions^
 ||sdad.guru^$~script,~image,~font,~stylesheet
 ||securybrowse.com^
@@ -49,37 +59,29 @@
 ||shooshtime.com^$script
 ||shopping.com^$third-party
 ||spclient.wg.spotify.com/ads/*$xhr
+||spot.im^
 ||stumble-upon.com^$third-party
 ||techlicious.com^$script
 ||thepiratebay.org^$script
 ||thewindowsclub.com^$script
+||thothub.to^$script
+||torrent9.ninja^$third-party,script
 ||tree.com^$third-party
 ||turner.com^$third-party
 ||usatoday.com/tangstatic^
-!||video-api.wsj.com^
+||vendor/prebid-*
+||videoplayerhub.com^
 ||vidtech.cbsinteractive.com/uvpjs/*
 ||washingtonpost.com/pb/api/*
 ||washingtonpost.com/video/*
 ||web.vortex.data.msn.com/collect/*
 ||whisk.com^$third-party
 ||wpcomwidgets.com^$third-party
-!||wsj.com^$removeparam=mod
 ||yahoo.com^$third-party,domain=~flickr.com
 ||yimg.com^$third-party,domain=~yahoo.com|~flickr.com
-||bollytalkies.com^$script
-||chaturbate.com^$third-party 
-||rightbattery.com^$script
-||thothub.to^$script
-||torrent9.ninja^$third-party,script
-||iris.tv^
-
-! pattern filters
-
-||g00^$~image,~stylesheet,~font
 fbclid$removeparam=fbclid
 utm$removeparam=/^utm_/
-*^$popunder
-washingtonpost.com##.powa-shot-promo-video
+
 
 ! element hiding filters
 
@@ -115,4 +117,4 @@ reddit.com##div.promotedvideolink
 msn.com##.nativead
 msn.com##.native-ad
 icicibank.com##+js(ra.js,/onpaste|oncopy|oncontextmenu/)
-
+washingtonpost.com##.powa-shot-promo-video
