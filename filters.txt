@@ -15,7 +15,6 @@
 ||amazon.com^$ping,removeparam=tag
 ||anyror.gujarat.gov.in/images/bg_image.png^
 ||aol.com^$third-party
-||bing.com^$third-party
 ||bollytalkies.com^$script
 ||brightcove.com^$third-party
 ||businessinsider.com^$script
