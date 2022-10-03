@@ -7,7 +7,6 @@
 !||amazon-adsystem.com^domain=amazon.com,important
 !||video-api.wsj.com^
 !||wsj.com^$removeparam=mod
-*^$popunder
 ||*.ga^$script
 ||22pixx.xyz^$script
 ||2mdn.net/ads^
@@ -26,27 +25,27 @@
 ||d275im4r3zngba.cloudfront.net^
 ||dailymail.co.uk/api/player^
 ||dailymail.co.uk^$media,script
-||facebook.com^$third-party
-||facebook.net^$third-party,domain=~facebook.com
+!||facebook.com^$third-party
+!||facebook.net^$third-party,domain=~facebook.com
 ||freebunker.com^$script
 ||g00^$~image,~stylesheet,~font
-||instagram.com/logging^
-||instagram.com^$removeparam=/^(u|s)$/
+!||instagram.com/logging^
+!||instagram.com^$removeparam=/^(u|s)$/
 ||iris.tv^
 ||lendingtree.com^$third-party
-||licdn.com^$third-party,domain=~linkedin.com
-||linkedin.com/li/track/*
-||linkedin.com^$third-party
+!||licdn.com^$third-party,domain=~linkedin.com
+!||linkedin.com/li/track/*
+!||linkedin.com^$third-party
 ||live-video.net^
 ||mailchimp.com^$third-party
 ||mgid.com^$popup
 ||moodiereport.com/flash^
 ||msn.com/*/node_modules_video_js_*
 ||myfinance.com^$third-party
-||news.google.com^$third-party
+!||news.google.com^$third-party
 ||nsimg.net^$~image
-||pinimg.com^$third-party,domain=~pinterest.*
-||pinterest.com^$third-party
+!||pinimg.com^$third-party,domain=~pinterest.*
+!||pinterest.com^$third-party
 ||pixsor.com^$third-party
 ||player.cnevids.com^
 ||rarbg.to/torrents.php^$script
@@ -56,9 +55,8 @@
 ||securybrowse.com^
 ||shoosh.co^$domain=~shooshtime.com,script
 ||shooshtime.com^$script
-||shopping.com^$third-party
+!||shopping.com^$third-party
 ||spclient.wg.spotify.com/ads/*$xhr
-||spot.im^
 ||stumble-upon.com^$third-party
 ||techlicious.com^$script
 ||thepiratebay.org^$script
@@ -68,7 +66,6 @@
 ||tree.com^$third-party
 ||turner.com^$third-party
 ||usatoday.com/tangstatic^
-||vendor/prebid-*
 ||videoplayerhub.com^
 ||vidtech.cbsinteractive.com/uvpjs/*
 ||washingtonpost.com/pb/api/*
@@ -76,10 +73,12 @@
 ||web.vortex.data.msn.com/collect/*
 ||whisk.com^$third-party
 ||wpcomwidgets.com^$third-party
-||yahoo.com^$third-party,domain=~flickr.com
+!||yahoo.com^$third-party,domain=~flickr.com
 ||yimg.com^$third-party,domain=~yahoo.com|~flickr.com
 fbclid$removeparam=fbclid
 utm$removeparam=/^utm_/
+vendor/prebid-*
+!*$popunder
 
 ! element hiding filters
 
