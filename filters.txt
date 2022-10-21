@@ -74,6 +74,8 @@
 ||whisk.com^$third-party
 ||wpcomwidgets.com^$third-party
 ||yahoo.com^$third-party,domain=~flickr.com
+||secondstreetapp.com^$third-party
+
 fbclid$removeparam=fbclid
 utm$removeparam=/^utm_/
 vendor/prebid-*
