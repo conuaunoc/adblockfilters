@@ -21,13 +21,8 @@
 ||cnetvideo.cbsistatic.com^
 ||d275im4r3zngba.cloudfront.net^
 ||dailymail.co.uk/api/player^
-||dailymail.co.uk^$script
-!||facebook.com^$third-party
-||facebook.net^$third-party,domain=~facebook.com|~instagram.com
 ||freebunker.com^$script
 ||g00^$~image,~stylesheet,~font
-!||instagram.com/logging^
-||instagram.com^$removeparam=/^(u|s)$/
 ||iris.tv^
 ||lendingtree.com^$third-party
 !||licdn.com^$third-party,domain=~linkedin.com
