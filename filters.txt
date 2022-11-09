@@ -5,13 +5,10 @@
 ! domain filters
 
 ||amazon-adsystem.com^domain=amazon.com,important
-!||video-api.wsj.com^
-!||wsj.com^$removeparam=mod
 ||*.ga^$script
 ||22pixx.xyz^$script
 ||2mdn.net/ads^
 ||abcnews.go.com/video/embed^
-||amazon.com^$ping,removeparam=tag
 ||anyror.gujarat.gov.in/images/bg_image.png^
 ||aol.com^$third-party
 ||bollytalkies.com^$script
@@ -24,7 +21,7 @@
 ||cnetvideo.cbsistatic.com^
 ||d275im4r3zngba.cloudfront.net^
 ||dailymail.co.uk/api/player^
-||dailymail.co.uk^$media,script
+||dailymail.co.uk^$script
 !||facebook.com^$third-party
 ||facebook.net^$third-party,domain=~facebook.com|~instagram.com
 ||freebunker.com^$script
