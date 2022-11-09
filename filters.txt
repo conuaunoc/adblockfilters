@@ -77,6 +77,10 @@ fbclid$removeparam=fbclid
 utm$removeparam=/^utm_/
 vendor/prebid-*
 !*$popunder
+||msn.com/*/node_modules_video_js_*
+vendor/prebid-*
+@@||google-analytics.com/analytics.js$domain=diigo.com,important
+jwplayer.js$domain=coindesk.com
 
 ! element hiding filters
 
