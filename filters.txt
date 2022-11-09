@@ -102,7 +102,6 @@ thehill.com##.ndn_floatContainer_enabled.ndn_floatContainer
 thehill.com##.scroll-down-to-next
 thepiratebay.org###sky-banner
 thepiratebay.org###sky-right
-twitter.com##.promoted-tweet
 vanityfair.com##.sub-brand-nav__lower:style(position:static !important)
 vanityfair.com##expanded:style(position:static !important)
 youporn.com##.trafficjunky-float-right
