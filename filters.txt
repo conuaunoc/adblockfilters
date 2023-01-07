@@ -4,6 +4,7 @@
 
 ! domain filters
 
+||accounts.google.com/gsi^$third-party
 ||amazon-adsystem.com^domain=amazon.com,important
 ||*.ga^$script
 ||22pixx.xyz^$script
