@@ -1,17 +1,25 @@
 [Adblock Plus 2.0]
 !Title: RMXCO Filters
 !Expires: 1 hours
-
+!
 ! domain filters
-
-||accounts.google.com/gsi^$third-party
-||amazon-adsystem.com^domain=amazon.com,important
-||*.ga^$script
+!
+! block Amazon in-app video ads
+! block autoplay videos
+! block Conde Nast videos
+!||firebaselogging-pa.googleapis.com^$important
+!||jwpcdn.com^$important
+!||jwpsrv.com^$important
+!||licdn.com^$third-party,domain=~linkedin.com
+!||linkedin.com/li/track/*
+!||videoplayerhub.com^$important
 ||22pixx.xyz^$script
-||2mdn.net/ads^
+||2mdn.net^$important
 ||abcnews.go.com/video/embed^
+||amazon-adsystem.com^domain=amazon.com,important
 ||anyror.gujarat.gov.in/images/bg_image.png^
 ||aol.com^$third-party
+||ark.tubi.video^$important
 ||bollytalkies.com^$script
 ||brightcove.com^$third-party
 ||businessinsider.com^$script
@@ -20,14 +28,20 @@
 ||cloudfront.net/player^
 ||cnet.com/a/video-player^
 ||cnetvideo.cbsistatic.com^
+||d1f0esyb34c1g2.cloudfront.net^
+||d275im4r3zngba.cloudfront.net^
 ||d275im4r3zngba.cloudfront.net^
 ||dailymail.co.uk/api/player^
+||dailymail.co.uk/static/videoplayer^
+||facebook.com/plugins/chat^$domain=~facebook.com|~messenger.com
 ||freebunker.com^$script
 ||g00^$~image,~stylesheet,~font
+||ga^$script
+||google.com/gsi^$third-party
+||google.com/swg^$third-party
 ||iris.tv^
+||jwplayer.com^$domain=coindesk.com,pagesix.com
 ||lendingtree.com^$third-party
-!||licdn.com^$third-party,domain=~linkedin.com
-!||linkedin.com/li/track/*
 ||linkedin.com^$third-party
 ||live-video.net^
 ||mailchimp.com^$third-party
@@ -37,19 +51,26 @@
 ||myfinance.com^$third-party
 ||news.google.com^$third-party
 ||nsimg.net^$~image
+||omtrdc.net^$important
+||p-n.io^
 ||pinimg.com^$third-party,domain=~pinterest.*
 ||pinterest.com^$third-party
 ||pixsor.com^$third-party
 ||player.cnevids.com^
+||player.cnevids.com^
+||pushlycdn.com^
+||rainmaker4.production-public.tubi.io^$important
 ||rarbg.to/torrents.php^$script
 ||rightbattery.com^$script
 ||sam.msn.com/promotions^
 ||sdad.guru^$~script,~image,~font,~stylesheet
+||secondstreetapp.com^$third-party
 ||securybrowse.com^
 ||shoosh.co^$domain=~shooshtime.com,script
 ||shooshtime.com^$script
 ||shopping.com^$third-party
 ||spclient.wg.spotify.com/ads/*$xhr
+||spot.im^
 ||stumble-upon.com^$third-party
 ||techlicious.com^$script
 ||thepiratebay.org^$script
@@ -60,6 +81,7 @@
 ||turner.com^$third-party
 ||usatoday.com/tangstatic^
 ||videoplayerhub.com^
+||videoplayerhub.com^
 ||vidtech.cbsinteractive.com/uvpjs/*
 ||washingtonpost.com/pb/api/*
 ||washingtonpost.com/video/*
@@ -67,27 +89,25 @@
 ||whisk.com^$third-party
 ||wpcomwidgets.com^$third-party
 ||yahoo.com^$third-party,domain=~flickr.com
-||secondstreetapp.com^$third-party
-||facebook.com/plugins/chat^
-
-fbclid$removeparam=fbclid
-utm$removeparam=/^utm_/
-vendor/prebid-*
-!*$popunder
-||msn.com/*/node_modules_video_js_*
-vendor/prebid-*
-@@||google-analytics.com/analytics.js$domain=diigo.com,important
-jwplayer.js$domain=coindesk.com
-
+!
 ! element hiding filters
-
+!
+!*$popunder
+!##.video-js
 !aliexpress.com##+js(disable-newtab-links.js)
 !aliexpress.com^$removeparam=
 !ebay.com##+js(disable-newtab-links.js)
+@@||*.americanexpress.com^$domain=americanexpress.com
+@@||google-analytics.com/analytics.js$domain=diigo.com,important
+@@||taobao.com^$domain=aliexpress.us
+fbclid$removeparam=fbclid
+utm$removeparam=/^utm_/
+/teal/*.js
+/vendor/prebid-*
 #%#//scriptlet('remove-attr','loop','video')
 #%#//scriptlet('remove-attr','playsinline','video')
 #%#//scriptlet('remove-attr','preload','video')
-!##.video-js
+||msn.com/*/node_modules_video_js_*
 amazon.com###desktop-editorial
 amazon.com##div._video-player_video-card
 americanexpress.com##+js(disable-newtab-links.js)
@@ -95,21 +115,30 @@ architecturaldigest.in###left-social
 architecturaldigest.in###navBar > .container
 architecturaldigest.in###topadbnr
 freshfruitportal.com##.banner
+icicibank.com#%#//scriptlet('remove-attr',/onpaste|oncopy|oncontextmenu/)
 melmagazine.com##+js(disable-newtab-links.js)
+msn.com##.native-ad
+msn.com##.nativead
+pagesix.com##div.nyp-video-player
 pornhub.com##div[onclick^="window.open"]
 pornhub.com##div>div>div>div.adlinks
 quora.com##div.Bundled
+reddit.com##div.promotedvideolink
 thehill.com##.ndn_floatContainer_enabled.ndn_floatContainer
 thehill.com##.scroll-down-to-next
 thepiratebay.org###sky-banner
 thepiratebay.org###sky-right
 vanityfair.com##.sub-brand-nav__lower:style(position:static !important)
 vanityfair.com##expanded:style(position:static !important)
+washingtonpost.com##.powa-shot-promo-video
 youporn.com##.trafficjunky-float-right
 youporn.com##div[onclick^="window.open"]
 youporn.com##div>a.ad-remove
-reddit.com##div.promotedvideolink
-msn.com##.nativead
-msn.com##.native-ad
-icicibank.com##+js(ra.js,/onpaste|oncopy|oncontextmenu/)
-washingtonpost.com##.powa-shot-promo-video
+!
+!
+@@||geolocation-db.com^
+@@||t.co^$important
+@@||footprintdns.com^$important
+@@||bjswholesaleclubinc.data.adobedc.net^$important
+@@||bjs-gw.ms.tagdelivery.com^$important
+!
