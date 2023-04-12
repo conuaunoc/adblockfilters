@@ -35,8 +35,8 @@
 ||dailymail.co.uk/static/videoplayer^
 ||facebook.com/plugins/chat^$domain=~facebook.com|~messenger.com
 ||freebunker.com^$script
-||g00^$~image,~stylesheet,~font
-||ga^$script
+!||g00^$~image,~stylesheet,~font
+!||ga^$script
 ||google.com/gsi^$third-party
 ||google.com/swg^$third-party
 ||iris.tv^
