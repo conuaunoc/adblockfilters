@@ -57,7 +57,6 @@
 ||pinterest.com^$third-party
 ||pixsor.com^$third-party
 ||player.cnevids.com^
-||player.cnevids.com^
 ||pushlycdn.com^
 ||rainmaker4.production-public.tubi.io^$important
 ||rarbg.to/torrents.php^$script
@@ -71,6 +70,7 @@
 ||shopping.com^$third-party
 ||spclient.wg.spotify.com/ads/*$xhr
 ||spot.im^
+||hulkprod.anm.co.uk^
 ||stumble-upon.com^$third-party
 ||techlicious.com^$script
 ||thepiratebay.org^$script
@@ -80,7 +80,6 @@
 ||tree.com^$third-party
 ||turner.com^$third-party
 ||usatoday.com/tangstatic^
-||videoplayerhub.com^
 ||videoplayerhub.com^
 ||vidtech.cbsinteractive.com/uvpjs/*
 ||washingtonpost.com/pb/api/*
