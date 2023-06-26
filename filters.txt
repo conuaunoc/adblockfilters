@@ -88,6 +88,9 @@
 ||whisk.com^$third-party
 ||wpcomwidgets.com^$third-party
 ||yahoo.com^$third-party,domain=~flickr.com
+||video-api.shdsvc.dowjones.io^
+
+
 !
 ! element hiding filters
 !
