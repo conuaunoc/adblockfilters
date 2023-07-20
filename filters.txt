@@ -143,4 +143,11 @@ youporn.com##div>a.ad-remove
 @@||footprintdns.com^$important
 @@||bjswholesaleclubinc.data.adobedc.net^$important
 @@||bjs-gw.ms.tagdelivery.com^$important
-!
+
+!||dmcdn.net/playerv5^$domain=~dailymotion.com
+||*ad*.cms$domain=indiatimes.com|timesofindia.com
+||googleadservices.com^
+||google.com/gsi$third-party
+||google.com/swg$third-party
+indiatimes.com#%#//scriptlet('remove-attr','target','a', 'stay')
+||msn.com/bundles/*video*.js^
