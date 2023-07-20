@@ -4,9 +4,6 @@
 !
 ! domain filters
 !
-! block Amazon in-app video ads
-! block autoplay videos
-! block Conde Nast videos
 !||firebaselogging-pa.googleapis.com^$important
 !||jwpcdn.com^$important
 !||jwpsrv.com^$important
