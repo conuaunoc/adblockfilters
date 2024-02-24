@@ -142,7 +142,7 @@ youporn.com##div>a.ad-remove
 @@||bjs-gw.ms.tagdelivery.com^$important
 
 ||dmcdn.net/playerv5^$domain=~dailymotion.com
-||*ad*.cms$domain=indiatimes.com|timesofindia.com
+!||*ad*.cms$domain=indiatimes.com|timesofindia.com
 ||googleadservices.com^
 ||google.com/gsi$third-party
 ||google.com/swg$third-party
