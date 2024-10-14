@@ -103,9 +103,9 @@ fbclid$removeparam=fbclid
 utm$removeparam=/^utm_/
 /teal/*.js
 /vendor/prebid-*
-#%#//scriptlet('remove-attr','loop','video')
-#%#//scriptlet('remove-attr','playsinline','video')
-#%#//scriptlet('remove-attr','preload','video')
+#%#//scriptlet("remove-attr","loop","video")
+#%#//scriptlet("remove-attr","playsinline","video")
+#%#//scriptlet("remove-attr","preload","video")
 ||msn.com/*/node_modules_video_js_*
 amazon.com###desktop-editorial
 amazon.com##div._video-player_video-card
@@ -114,7 +114,7 @@ architecturaldigest.in###left-social
 architecturaldigest.in###navBar > .container
 architecturaldigest.in###topadbnr
 freshfruitportal.com##.banner
-icicibank.com#%#//scriptlet('remove-attr',/onpaste|oncopy|oncontextmenu/)
+icicibank.com#%#//scriptlet("remove-attr",/onpaste|oncopy|oncontextmenu/)
 melmagazine.com##+js(disable-newtab-links.js)
 msn.com##.native-ad
 msn.com##.nativead
@@ -135,6 +135,10 @@ youporn.com##div[onclick^="window.open"]
 youporn.com##div>a.ad-remove
 !
 !
+@@||bjs-gw.ms.tagdelivery.com^$important
+@@||bjswholesaleclubinc.data.adobedc.net^$important
+@@||cvs.com^$removeparam=/^ICID=/i,domain=cvs.com
+@@||footprintdns.com^$important
 @@||geolocation-db.com^
 @@||t.co^$important
 @@||footprintdns.com^$important
@@ -146,5 +150,14 @@ youporn.com##div>a.ad-remove
 ||googleadservices.com^
 ||google.com/gsi$third-party
 ||google.com/swg$third-party
-indiatimes.com#%#//scriptlet('remove-attr','target','a', 'stay')
+||googleadservices.com^
+||mca.gov.in/*/clientlib-devtool.js
 ||msn.com/bundles/*video*.js^
+||onesignal.com^$third-party
+amazon.in#%#//scriptlet("remove-attr","target","a.a-link-normal")
+fedex.com###nuanMessagingFrame
+icicibank.com#%#//scriptlet("prevent-addEventListener",/contextmenu|cut|copy|paste/)
+indiatimes.com#%#//scriptlet("remove-attr","target","a","stay")
+mca.gov.in#%#//scriptlet("prevent-addEventListener",/contextmenu|cut|copy|paste/)
+redscarepodcast.libsyn.com#@#iframe[Width="100%"][height="90"]
+themorningcontext.com#%#//scriptlet("remove-node-text","style","body {visibility: hidden; display: none;}")
