@@ -134,16 +134,22 @@ youporn.com##.trafficjunky-float-right
 youporn.com##div[onclick^="window.open"]
 youporn.com##div>a.ad-remove
 !
-!
+
+@@||admin.microsoft.com
+@@||airtel.in
+@@||application.axisbank.co.in
 @@||bjs-gw.ms.tagdelivery.com^$important
 @@||bjswholesaleclubinc.data.adobedc.net^$important
+@@||britishairways.com
+@@||channel4.com
 @@||cvs.com^$removeparam=/^ICID=/i,domain=cvs.com
+@@||diigo.com
+@@||finishlinemanufacturing.com
 @@||footprintdns.com^$important
 @@||geolocation-db.com^
+@@||myprepaidcenter.com
+@@||shopping.ba.com
 @@||t.co^$important
-@@||footprintdns.com^$important
-@@||bjswholesaleclubinc.data.adobedc.net^$important
-@@||bjs-gw.ms.tagdelivery.com^$important
 
 ||dmcdn.net/playerv5^$domain=~dailymotion.com
 !||*ad*.cms$domain=indiatimes.com|timesofindia.com
