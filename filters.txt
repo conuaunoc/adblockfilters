@@ -162,7 +162,7 @@ youporn.com##div>a.ad-remove
 ||onesignal.com^$third-party
 amazon.in#%#//scriptlet("remove-attr","target","a.a-link-normal")
 fedex.com###nuanMessagingFrame
-axisbank.*#%#//scriptlet("prevent-addEventListener","contextmenu|cut|copy|paste")
+!axisbank.*#%#//scriptlet("prevent-addEventListener","contextmenu|cut|copy|paste")
 icicibank.com#%#//scriptlet("prevent-addEventListener","contextmenu|cut|copy|paste")
 mca.gov.in#%#//scriptlet("prevent-addEventListener","contextmenu|cut|copy|paste")
 indiatimes.com#%#//scriptlet("remove-attr","target","a","stay")
