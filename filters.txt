@@ -86,7 +86,7 @@
 ||wpcomwidgets.com^$third-party
 ||yahoo.com^$third-party,domain=~flickr.com
 ||video-api.shdsvc.dowjones.io^
-
+||vp.nyt.com/video^
 
 !
 ! element hiding filters
