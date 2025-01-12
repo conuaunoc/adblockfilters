@@ -30,7 +30,6 @@
 ||cnetvideo.cbsistatic.com^
 ||d1f0esyb34c1g2.cloudfront.net^
 ||d275im4r3zngba.cloudfront.net^
-||d275im4r3zngba.cloudfront.net^
 ||dailymail.co.uk/api/player^
 ||dailymail.co.uk/static/videoplayer^
 ||dmcdn.net/playerv5^$domain=~dailymotion.com
@@ -93,9 +92,8 @@
 ||yahoo.com^$third-party,domain=~flickr.com
 
 
-!
 ! element hiding filters
-!
+
 !*$popunder
 !##.video-js
 !aliexpress.com##+js(disable-newtab-links.js)
@@ -138,7 +136,6 @@ washingtonpost.com##.powa-shot-promo-video
 youporn.com##.trafficjunky-float-right
 youporn.com##div[onclick^="window.open"]
 youporn.com##div>a.ad-remove
-!
 
 @@||admin.microsoft.com
 @@||airtel.in
@@ -156,7 +153,7 @@ youporn.com##div>a.ad-remove
 @@||shopping.ba.com
 @@||t.co^$important
 
-|
+
 amazon.in#%#//scriptlet("remove-attr","target","a.a-link-normal")
 fedex.com###nuanMessagingFrame
 !axisbank.*#%#//scriptlet("prevent-addEventListener","contextmenu|cut|copy|paste")
