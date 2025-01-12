@@ -154,7 +154,6 @@ youporn.com##div>a.ad-remove
 ||dmcdn.net/playerv5^$domain=~dailymotion.com
 !||*ad*.cms$domain=indiatimes.com|timesofindia.com
 ||googleadservices.com^
-||google.com/gsi$third-party
 ||google.com/swg$third-party
 ||googleadservices.com^
 ||mca.gov.in/*/clientlib-devtool.js
