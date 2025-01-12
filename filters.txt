@@ -4,7 +4,10 @@
 !
 ! domain filters
 !
+!||*ad*.cms$domain=indiatimes.com|timesofindia.com
 !||firebaselogging-pa.googleapis.com^$important
+!||g00^$~image,~stylesheet,~font
+!||ga^$script
 !||jwpcdn.com^$important
 !||jwpsrv.com^$important
 !||licdn.com^$third-party,domain=~linkedin.com
@@ -30,25 +33,28 @@
 ||d275im4r3zngba.cloudfront.net^
 ||dailymail.co.uk/api/player^
 ||dailymail.co.uk/static/videoplayer^
+||dmcdn.net/playerv5^$domain=~dailymotion.com
 ||facebook.com/plugins/chat^$domain=~facebook.com|~messenger.com
 ||freebunker.com^$script
-!||g00^$~image,~stylesheet,~font
-!||ga^$script
-!||google.com/gsi^$third-party
 ||google.com/swg^$third-party
+||googleadservices.com^
+||hulkprod.anm.co.uk^
 ||iris.tv^
 ||jwplayer.com^$domain=coindesk.com,pagesix.com
 ||lendingtree.com^$third-party
 ||linkedin.com^$third-party
 ||live-video.net^
 ||mailchimp.com^$third-party
+||mca.gov.in/*/clientlib-devtool.js
 ||mgid.com^$popup
 ||moodiereport.com/flash^
 ||msn.com/*/node_modules_video_js_*
+||msn.com/bundles/*video*.js^
 ||myfinance.com^$third-party
 ||news.google.com^$third-party
 ||nsimg.net^$~image
 ||omtrdc.net^$important
+||onesignal.com^$third-party
 ||p-n.io^
 ||pinimg.com^$third-party,domain=~pinterest.*
 ||pinterest.com^$third-party
@@ -66,8 +72,6 @@
 ||shooshtime.com^$script
 ||shopping.com^$third-party
 ||spclient.wg.spotify.com/ads/*$xhr
-||spot.im^
-||hulkprod.anm.co.uk^
 ||stumble-upon.com^$third-party
 ||techlicious.com^$script
 ||thepiratebay.org^$script
@@ -77,16 +81,17 @@
 ||tree.com^$third-party
 ||turner.com^$third-party
 ||usatoday.com/tangstatic^
+||video-api.shdsvc.dowjones.io^
 ||videoplayerhub.com^
 ||vidtech.cbsinteractive.com/uvpjs/*
+||vp.nyt.com/video^
 ||washingtonpost.com/pb/api/*
 ||washingtonpost.com/video/*
 ||web.vortex.data.msn.com/collect/*
 ||whisk.com^$third-party
 ||wpcomwidgets.com^$third-party
 ||yahoo.com^$third-party,domain=~flickr.com
-||video-api.shdsvc.dowjones.io^
-||vp.nyt.com/video^
+
 
 !
 ! element hiding filters
@@ -151,14 +156,7 @@ youporn.com##div>a.ad-remove
 @@||shopping.ba.com
 @@||t.co^$important
 
-||dmcdn.net/playerv5^$domain=~dailymotion.com
-!||*ad*.cms$domain=indiatimes.com|timesofindia.com
-||googleadservices.com^
-||google.com/swg$third-party
-||googleadservices.com^
-||mca.gov.in/*/clientlib-devtool.js
-||msn.com/bundles/*video*.js^
-||onesignal.com^$third-party
+|
 amazon.in#%#//scriptlet("remove-attr","target","a.a-link-normal")
 fedex.com###nuanMessagingFrame
 !axisbank.*#%#//scriptlet("prevent-addEventListener","contextmenu|cut|copy|paste")
